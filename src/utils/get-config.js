@@ -28,7 +28,7 @@ var GetConfig = function (dir) {
   }
 
   if (!PathsExist(path.join(appRoot, 'node_modules'))) {
-    log.fatal('no node_modules directory!');
+    console.error('no node_modules directory!');
     process.exit(1);
   }
 
